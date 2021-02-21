@@ -1,5 +1,6 @@
 # Start from S4TF base image
-FROM gcr.io/swift-tensorflow/base-deps-cuda10.2-cudnn7-ubuntu18.04
+# FROM gcr.io/swift-tensorflow/base-deps-cuda10.2-cudnn7-ubuntu18.04
+FROM registry.cn-shenzhen.aliyuncs.com/jameszhan/swift-tensorflow-base-deps-cuda10.2-cudnn7-ubuntu18.04:v1.0.0
 
 # Allow the caller to specify the toolchain to use
 ARG swift_tf_url=https://storage.googleapis.com/swift-tensorflow-artifacts/nightlies/latest/swift-tensorflow-DEVELOPMENT-cuda10.2-cudnn7-ubuntu18.04.tar.gz
